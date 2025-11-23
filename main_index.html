@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fit Remaja • ObesAI (Presentation Edition)</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav-wrap">
+    <div class="nav-inner wrap">
+      <div class="brand">
+        <div class="logo">FR</div>
+        <div class="brand-text">
+          <h1>Fit Remaja</h1>
+          <p class="tag">Kesihatan Remaja • ObesAI</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="#home" data-link>Utama</a></li>
+          <li><a href="#obesiti" data-link>Obesiti</a></li>
+          <li><a href="#artikel" data-link>Artikel</a></li>
+          <li><a href="#bmi" data-link>BMI</a></li>
+          <li><a href="https://aspire05immanuel-gmail-com.trinket.io/sites/kuuiz" target="_blank" rel="noopener noreferrer">Kuiz</a></li>
+          <li><a href="#komen" data-link>Komen</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <!-- Optional: place Obesity.mp4 file in same folder and uncomment -->
+    <!-- <video id="heroVideo" autoplay muted loop playsinline>
+      <source src="Obesity.mp4" type="video/mp4" />
+    </video> -->
+    <div class="hero-content wrap">
+      <h2 class="title">Kesihatan Remaja, Masa Depan Negara</h2>
+      <p class="subtitle">Belajar tentang obesiti, pemakanan sihat, pengiraan BMI dan berinteraksi dengan ObesAI — semuanya dalam Bahasa Melayu.</p>
+      <div class="hero-ctas">
+        <button class="btn primary" data-scroll="#obesiti">Mula</button>
+      </div>
+    </div>
+    <div class="hero-accent"></div>
+  </section>
+
+  <!-- OBESITI -->
+  <section id="obesiti" class="section wrap">
+    <h3 class="section-title">Apakah Itu Obesiti?</h3>
+    <div class="two-col">
+      <div>
+        <p>Obesiti ialah keadaan di mana pengumpulan lemak badan yang berlebihan boleh menjejaskan kesihatan. Ia berkait rapat dengan penyakit kronik seperti diabetes, penyakit jantung dan masalah sendi.</p>
+        <h4>Punca Umum</h4>
+        <ul>
+          <li>Pengambilan kalori melebihi penggunaan tenaga</li>
+          <li>Gaya hidup sedentari</li>
+          <li>Makanan tinggi gula/lemak proses</li>
+          <li>Faktor genetik & hormon</li>
+        </ul>
+      </div>
+      <div class="card info-card">
+        <h4>Apa yang boleh dilakukan</h4>
+        <ol>
+          <li>Kawal saiz hidangan</li>
+          <li>Tingkat aktiviti fizikal</li>
+          <li>Kurangkan minuman bergula</li>
+          <li>Dapatkan sokongan keluarga</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTIKEL -->
+  <section id="artikel" class="section wrap">
+    <h3 class="section-title">Artikel</h3>
+    <div class="pdf-viewer-container">
+      <div class="pdf-header">
+          <div class="pdf-title">FUNGSI & KEPENTINGAN MAKRONUTRIEN DAN MIKRONUTRIEN</div>
+          <div class="pdf-actions">
+              <a href="fungsi.pdf" download class="pdf-btn">Download</a>
+              <a href="fungsi.pdf" target="_blank" class="pdf-btn">Buka Tab Baru</a>
+          </div>
+      </div>
+
+      <iframe 
+          src="fungsi.pdf" 
+          class="pdf-frame"
+          type="application/pdf">
+      </iframe>
+    </div>
+
+    <div class="pdf-viewer-container">
+      <div class="pdf-header">
+          <div class="pdf-title">Jadual Diet</div>
+          <div class="pdf-actions">
+              <a href="Jadual.pdf" download class="pdf-btn">Download</a>
+              <a href="Jadual.pdf" target="_blank" class="pdf-btn">Buka Tab Baru</a>
+          </div>
+      </div>
+
+      <iframe 
+          src="Jadual.pdf" 
+          class="pdf-frame"
+          type="application/pdf">
+      </iframe>
+    </div>
+  
+    <div class="img">
+      <div class="img-header">
+          <div class="img-title">Lakaran</div>
+          <div class="img-actions">
+              <a href="Lakaran.jpg" download class="pdf-btn">Download</a>
+              <a href="Lakaran.jpg" target="_blank" class="pdf-btn">Buka Tab Baru</a>
+          </div>
+      </div>
+
+      <iframe 
+          img src="Lakaran.jpg" 
+          class="pdf-frame"
+          type="application/pdf">
+      </iframe>
+    </div>
+</section>
+
+  <!-- BMI -->
+  <section id="bmi" class="section section-bmi wrap">
+    <h3 class="section-title">Kalkulator BMI</h3>
+    <div class="bmi-panel">
+      <div class="bmi-inputs">
+        <label>Berat (kg)</label>
+        <input id="bmiWeight" type="number" placeholder="70">
+        <label>Tinggi (cm)</label>
+        <input id="bmiHeight" type="number" placeholder="170">
+        <button id="bmiCalc" class="btn primary">Kira BMI</button>
+      </div>
+      <div class="bmi-result" id="bmiResult">
+        <p>Masukkan berat & tinggi untuk kira BMI</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMENTS (premium) -->
+  <section id="komen" class="section wrap">
+    <h3 class="section-title">Kongsi Pendapat Anda</h3>
+
+    <div class="comment-pane">
+      <div class="comment-form glass">
+        <div class="form-row">
+          <input id="commentName" type="text" placeholder="Nama (pilihan)">
+          <input id="commentEmail" type="email" placeholder="E-mel (pilihan)">
+        </div>
+        <textarea id="commentText" rows="4" placeholder="Tulis komen anda..."></textarea>
+        <div class="form-actions">
+          <button id="commentPost" class="btn primary">Hantar</button>
+          <div class="note">Komen disimpan secara tempatan untuk demo.</div>
+        </div>
+      </div>
+
+      <div id="commentsList" class="comments-list">
+        <!-- comments injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>© 2025 Fit Remaja • Dibangunkan untuk pendidikan & kesedaran</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
